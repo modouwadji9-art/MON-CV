@@ -1,0 +1,58 @@
+ :root{
+  --accent:#b71c1c;
+  --accent-dark:#a31717;
+  --text:#222;
+  --muted:#6b6b6b;
+  --bg:#fff;
+  --sidebar-width:320px;
+  --max-width:1100px;
+  --gap:30px;
+  --font-sans: "Montserrat", "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+ }
+ *{box-sizing:border-box}
+ html,body{height:100%}
+ body{
+  font-family:var(--font-sans);
+  margin:0;
+  color:var(--text);
+  background:#f6f6f6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+ }
+ .cv{
+  width:100%;
+  max-width:var(--max-width);
+  background:var(--bg);
+  display:grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  overflow:hidden;
+ }
+ .sidebar{
+  background:var(--accent);
+  color:#fff;
+  padding:28px 24px;
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+ }
+ .photo{
+  width:100%;
+  max-width:160px;
+  border-radius:6px;
+ }
+ .section-title{
+  font-size:13px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+  font-weight:700;
+}
+ .sidebar ul{list-style:none;padding:0;margin:0;font-size:14px;line-height:1.5}
+ .main-content{padding:34px 40px;background:var(--bg)}
+ .name{font-size:34px;color:var(--accent-dark);font-weight:800;margin:0}
+ .role{color:var(--muted);font-size:16px;margin:0 0 20px 0}
+ .sec-h{font-size:13px;text-transform:uppercase;border-top:3px solid #e6e6e6;padding-top:10px}
+ .job-title{font-weight:700;font-size:15px;margin:8px 0}
+ .date{font-size:13px;color:var(--muted
